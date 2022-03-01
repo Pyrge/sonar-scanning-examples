@@ -34,7 +34,7 @@ pipeline {
                             -Dsonar.projectKey="${PROJECT_KEY}" \\
                             -Dsonar.projectName="${PROJECT_NAME}" \\
                             -Dsonar.projectVersion="${PROJECT_VERSION}" \\
-                            -Dsonar.sources=. \\
+                            -Dsonar.sources=./sonarqube-scanner/src \\
                             -Dsonar.analysis.mode=publish \\
                             ${SONAR_OPTS}
                     ''')
