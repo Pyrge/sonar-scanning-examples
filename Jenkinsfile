@@ -15,11 +15,6 @@ pipeline {
                 sh('env')
             }
         }
-        stage("NPM Install") {
-            steps {
-                sh('npm install')
-            }
-        }
         stage('Run Sonar scanner') {
             environment {
                 PROJECT_KEY = "scan-${env.GIT_REPOSITORY}"
